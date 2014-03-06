@@ -21,8 +21,7 @@ int main(string[] args) {
   foreach (arg; args) {
     errors += checkEntry(arg);
   }
-
-  return 0;
+  return (0 == errors) ? 0 : 1;
 }
 
 bool dontLintPath(string path) {
